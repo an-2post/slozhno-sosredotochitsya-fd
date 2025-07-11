@@ -8,9 +8,7 @@
   background-attachment: fixed;
   font-family: var(--main-font-family);
   font-size: var(--main-font-size);
-  font-size: 18px;
   line-height: 23.4px;
-
   color: var(--main-color);
 }
 
@@ -60,10 +58,6 @@
   border-bottom: 1px solid var(--accent-color);
 }
 
-.header__theme-menu-button_active {
-  pointer-events: none;
-}
-
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
@@ -81,11 +75,11 @@
 
 .header__theme-menu-button_active {
   border: 1px solid var(--accent-color);
+  pointer-events: none;
 }
 
 .header-title {
   color: var(--focus-text_color);
-
   align-self: center;
   justify-self: start;
   text-shadow: 4px 4px 0 var(--accent-color);
