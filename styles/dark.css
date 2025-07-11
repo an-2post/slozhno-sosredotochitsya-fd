@@ -9,7 +9,20 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bg-image: url(./../images/cover-image-dark.png);
+  --focus-text_color: #db00ff;
+  --accent-color: #ff0070;
+  --main-color: #f1b2ce;
 }
+/* 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-image: url(./../images/cover-image-dark.png);
+    --focus-text_color: #db00ff;
+    --accent-color: #ff0070;
+    --main-color: #f1b2ce;
+  }
+} */
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
