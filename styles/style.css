@@ -63,19 +63,18 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* margin-block-start: 64px; */
 }
 
 .header__theme-menu-button {
   background-color: transparent;
-  color: var(--accent-color);
+  color: var(--menu-color);
   padding: 1.5px 13px;
   border: none;
   text-transform: lowercase;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--menu-color);
   pointer-events: none;
 }
 
@@ -93,11 +92,12 @@
 }
 
 .header-description {
-  color: #000028;
+  color: var(--color-description);
   font-weight: 700;
   line-height: 23.4px;
   letter-spacing: 0;
   align-self: center;
+  margin-bottom: 13px;
 }
 /*-------------------------------*/
 
@@ -135,6 +135,7 @@
 .card-title {
   color: #000028;
   font-weight: 700;
+  font-size: var(--main-font-size);
 }
 
 .add-margin {
@@ -168,7 +169,7 @@
   padding-top: 10px;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 5px;
+  gap: 10px;
 }
 
 .card-image {
@@ -176,6 +177,7 @@
   block-size: 100%;
   max-block-size: 100%;
   object-fit: cover;
+  display: block;
 }
 
 /*---------------------*/
@@ -197,8 +199,8 @@
   right: var(--main-padding);
   width: 25px;
   height: 25px;
-  border-top: 1px solid var(--accent-color);
-  border-right: 1px solid var(--accent-color);
+  border-top: 1px solid var(--menu-color);
+  border-right: 1px solid var(--menu-color);
 }
 
 .angles::after {
@@ -208,8 +210,8 @@
   left: var(--main-padding);
   width: 25px;
   height: 25px;
-  border-bottom: 1px solid var(--accent-color);
-  border-left: 1px solid var(--accent-color);
+  border-bottom: 1px solid var(--menu-color);
+  border-left: 1px solid var(--menu-color);
 }
 
 .footer-text {
@@ -256,14 +258,14 @@
       calc(0.83 * (0.5625rem + 14.4531vw)),
       calc(0.83 * 9.8125rem)
     );
-    /* word-spacing: 0.5em; */
   }
 
   .header-description {
     grid-column: 2;
     grid-row: 3;
     align-self: center;
-    margin-bottom: 110px;
+    margin-bottom: 115px;
+    margin-left: 10px;
   }
 
   .main {
@@ -279,6 +281,10 @@
 
   .article-row .article__title {
     inline-size: 30%;
+  }
+
+  .gallery {
+    padding-bottom: 40px;
   }
 
   .gallery__card-list {
@@ -352,4 +358,14 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+}
+
+@media (prefers-color-scheme: light) {
+  .theme-auto .rec-label {
+    display: none;
+  }
+}
+
+.theme-light .rec-label {
+  display: none;
 }
