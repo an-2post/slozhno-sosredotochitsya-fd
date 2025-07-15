@@ -16,7 +16,7 @@
   --accent-color: #ff8dcb;
   --main-color: #353430;
   --menu-color: #353430;
-  --accent-color-opacity: #353430;
+  --accent-color-opacity: rgba(50, 49, 45, 0.4);
 }
 
 @media (prefers-color-scheme: light) {
@@ -28,17 +28,23 @@
     --accent-color: #ff8dcb;
     --main-color: #353430;
     --menu-color: #353430;
-    --accent-color-opacity: #353430;
+    --accent-color-opacity: rgba(50, 49, 45, 0.4);
   }
 }
 
-.theme-light .header__theme-pseudo {
+.theme-light .rec-label {
   display: none;
   /* Вам также нужно будет написать ряд подобных селекторов */
 }
 
 @media (prefers-color-scheme: light) {
-  :root:not(.theme-dark) .header__theme-pseudo {
+  :root:not(.theme-dark) .rec-label {
     display: none;
   }
 }
+
+/* @media (prefers-color-scheme: light) {
+  .theme-auto .rec-label {
+    display: none;
+  }
+} */

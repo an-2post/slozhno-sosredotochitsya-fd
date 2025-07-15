@@ -18,16 +18,3 @@
   --menu-color: #ff0070;
   --accent-color-opacity: rgba(255, 0, 112, 0.4);
 }
-/* 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg-image: url(./../images/cover-image-dark.png);
-    --focus-text_color: #db00ff;
-    --accent-color: #ff0070;
-    --main-color: #f1b2ce;
-  }
-} */
-
-.theme-dark .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-}
